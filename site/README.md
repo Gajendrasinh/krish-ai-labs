@@ -31,21 +31,21 @@ npm run preview
 ## AI chat widget
 
 `src/components/ChatWidget.jsx` is a floating chat widget shown on every page (wired in via
-`Layout.jsx`), meant to be backed by a real AI/RAG service. It's transport-only — no site data or
-API keys live in the frontend — and calls:
+`Layout.jsx`). It's transport-only — no site data or API keys live in the frontend — and calls:
 
 ```
 POST /api/chat
 Request  { message: string, history: { role: 'user' | 'assistant', content: string }[] }
-Response { reply: string }
+Response { reply: string, sources?: { source: string, heading: string }[], mode?: 'agent'|'retrieval_only' }
 ```
 
-Point `CHAT_ENDPOINT` in `ChatWidget.jsx` at a real backend (same-origin path, or a full URL) once
-one exists. That backend is where the actual retrieval/grounding and LLM call should happen — keep
-API keys server-side, never in this frontend bundle.
+There's now a real backend for this at `../backend` — a FastAPI RAG agent (see
+`../backend/README.md`). Point `CHAT_ENDPOINT` in `ChatWidget.jsx` at its deployed URL (it only
+reads `data.reply`, so the extra `sources`/`mode` fields are ignored but available if you want to
+surface them later).
 
-Until then, `npm run dev` serves a **dev-only stub** at `/api/chat` (`dev/chatStubPlugin.js`, wired
-into `vite.config.js`) that keyword-matches a few canned replies about services/portfolio/pricing —
-just enough to exercise the widget end to end. It only attaches to the Vite dev server (not
-`npm run build` / `npm run preview` and not production), and can be deleted once a real backend is
-wired in.
+For local dev without running the real backend, `npm run dev` also serves a **dev-only stub** at
+`/api/chat` (`dev/chatStubPlugin.js`, wired into `vite.config.js`) that keyword-matches a few
+canned replies — just enough to exercise the widget's UI. It only attaches to the Vite dev server
+(not `npm run build` / `npm run preview` and not production); delete it once `CHAT_ENDPOINT` points
+at the real backend everywhere you need it.
