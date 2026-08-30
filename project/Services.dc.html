@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; background: oklch(0.16 0.006 255); font-family:'Inter',sans-serif; }
+    a { color: oklch(0.72 0.14 200); }
+    a:hover { color: oklch(0.8 0.14 200); }
+  </style>
+</helmet>
+<div style="position:relative;min-height:100vh;color:oklch(0.96 0.004 255);overflow-x:hidden">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:oklch(0.16 0.006 255 / 0.85);backdrop-filter:blur(12px);border-bottom:1px solid oklch(0.28 0.006 255)">
+    <a href="./index.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg, oklch(0.62 0.19 290), oklch(0.68 0.14 200))"></div>
+      <span style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;color:oklch(0.96 0.004 255)">Krish AI Labs</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:36px">
+      <a href="./index.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">Home</a>
+      <a href="./Services.dc.html" style="color:oklch(0.96 0.004 255);text-decoration:none;font-size:14px;font-weight:500">Services</a>
+      <a href="./Portfolio.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">Portfolio</a>
+      <a href="./About.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">About</a>
+      <a href="./Contact.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">Contact</a>
+    </nav>
+    <a href="./Contact.dc.html" style="padding:10px 22px;border-radius:8px;background:linear-gradient(135deg, oklch(0.62 0.19 290), oklch(0.68 0.14 200));color:white;font-weight:600;text-decoration:none;font-size:14px">Get a Quote</a>
+  </header>
+
+  <section style="position:relative;padding:160px 48px 80px;max-width:1200px;margin:0 auto">
+    <span style="padding:6px 16px;border-radius:20px;border:1px solid oklch(0.4 0.02 255);color:oklch(0.75 0.02 255);font-size:13px;font-weight:500">Services</span>
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:48px;font-weight:700;margin:24px 0 16px;letter-spacing:-0.01em;max-width:700px">Software and AI expertise, end to end.</h1>
+    <p style="font-size:17px;line-height:1.6;color:oklch(0.72 0.01 255);margin:0;max-width:640px">From first prototype to production infrastructure &mdash; we cover the full stack, plus the AI layer on top of it.</p>
+  </section>
+
+  <section style="padding:20px 48px 100px;max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:20px">
+
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="width:64px;height:64px;border-radius:14px;background:oklch(0.62 0.19 290 / 0.18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:oklch(0.72 0.16 290);font-size:18px">AI</div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;margin:0 0 10px">AI &amp; GenAI Development</h3>
+        <p style="font-size:15px;line-height:1.65;color:oklch(0.68 0.01 255);margin:0 0 12px">We design and build generative AI features &mdash; from chat copilots to content and code generation tools &mdash; using the latest large language models, integrated directly into your product.</p>
+        <p style="font-size:13px;color:oklch(0.55 0.01 255);margin:0">LLM integration &middot; prompt engineering &middot; copilots &middot; content generation</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="width:64px;height:64px;border-radius:14px;background:oklch(0.68 0.14 200 / 0.18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:oklch(0.72 0.13 200);font-size:18px">FS</div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;margin:0 0 10px">Full-Stack Software Development</h3>
+        <p style="font-size:15px;line-height:1.65;color:oklch(0.68 0.01 255);margin:0 0 12px">Complete web and SaaS applications &mdash; frontend, backend, database, and APIs &mdash; built to be maintainable and to scale as your product grows.</p>
+        <p style="font-size:13px;color:oklch(0.55 0.01 255);margin:0">Web apps &middot; APIs &middot; databases &middot; SaaS platforms</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="width:64px;height:64px;border-radius:14px;background:oklch(0.62 0.19 290 / 0.18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:oklch(0.72 0.16 290);font-size:18px">AG</div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;margin:0 0 10px">AI Agents &amp; Automation</h3>
+        <p style="font-size:15px;line-height:1.65;color:oklch(0.68 0.01 255);margin:0 0 12px">Autonomous agents that carry out multi-step tasks &mdash; triaging support tickets, processing documents, or running workflows &mdash; with human oversight where it matters.</p>
+        <p style="font-size:13px;color:oklch(0.55 0.01 255);margin:0">Task automation &middot; agent orchestration &middot; workflow tooling</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="width:64px;height:64px;border-radius:14px;background:oklch(0.68 0.14 200 / 0.18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:oklch(0.72 0.13 200);font-size:18px">RAG</div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;margin:0 0 10px">RAG &amp; LLM Applications</h3>
+        <p style="font-size:15px;line-height:1.65;color:oklch(0.68 0.01 255);margin:0 0 12px">Retrieval-augmented generation systems that ground model answers in your own documents, data, and internal knowledge &mdash; reducing hallucination and keeping answers current.</p>
+        <p style="font-size:13px;color:oklch(0.55 0.01 255);margin:0">Vector search &middot; knowledge bases &middot; document Q&amp;A</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="width:64px;height:64px;border-radius:14px;background:oklch(0.62 0.19 290 / 0.18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:oklch(0.72 0.16 290);font-size:18px">CL</div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;margin:0 0 10px">Cloud Solutions</h3>
+        <p style="font-size:15px;line-height:1.65;color:oklch(0.68 0.01 255);margin:0 0 12px">Cloud architecture, deployment, and DevOps &mdash; setting up infrastructure that stays reliable and cost-efficient as usage scales.</p>
+        <p style="font-size:13px;color:oklch(0.55 0.01 255);margin:0">AWS &middot; GCP &middot; Azure &middot; CI/CD &middot; infrastructure as code</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="width:64px;height:64px;border-radius:14px;background:oklch(0.68 0.14 200 / 0.18);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:oklch(0.72 0.13 200);font-size:18px">TC</div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;margin:0 0 10px">Technical Consulting</h3>
+        <p style="font-size:15px;line-height:1.65;color:oklch(0.68 0.01 255);margin:0 0 12px">Independent advisory on architecture, technology choices, and AI strategy &mdash; helping teams make sound decisions before committing engineering time.</p>
+        <p style="font-size:13px;color:oklch(0.55 0.01 255);margin:0">Architecture review &middot; tech strategy &middot; IT advisory</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="padding:80px 48px;text-align:center;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg, oklch(0.62 0.19 290 / 0.15), oklch(0.68 0.14 200 / 0.15))"></div>
+    <div style="position:relative;z-index:1">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:38px;font-weight:700;margin:0 0 20px">Not sure which service fits?</h2>
+      <p style="font-size:16px;color:oklch(0.72 0.01 255);margin:0 0 32px">Tell us what you're building and we'll recommend an approach.</p>
+      <a href="./Contact.dc.html" style="padding:14px 30px;border-radius:8px;background:linear-gradient(135deg, oklch(0.62 0.19 290), oklch(0.68 0.14 200));color:white;font-weight:600;text-decoration:none;font-size:15px">Get a Quote</a>
+    </div>
+  </section>
+
+  <footer style="padding:48px;border-top:1px solid oklch(0.28 0.006 255);display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;max-width:1200px;margin:0 auto">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600">Krish AI Labs</span>
+      <span style="font-size:13px;color:oklch(0.6 0.01 255)">Building Intelligent Software for the Future</span>
+      <span style="font-size:13px;color:oklch(0.6 0.01 255);margin-top:8px">hello@krishailabs.com</span>
+    </div>
+    <div style="display:flex;gap:40px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-size:12px;font-weight:600;color:oklch(0.5 0.01 255);text-transform:uppercase;letter-spacing:0.05em">Company</span>
+        <a href="./About.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">About</a>
+        <a href="./Portfolio.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">Portfolio</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-size:12px;font-weight:600;color:oklch(0.5 0.01 255);text-transform:uppercase;letter-spacing:0.05em">Work With Us</span>
+        <a href="./Services.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">Services</a>
+        <a href="./Contact.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div style="text-align:center;padding:20px;font-size:12px;color:oklch(0.5 0.01 255);border-top:1px solid oklch(0.28 0.006 255)">&copy; 2026 Krish AI Labs. All rights reserved.</div>
+</div>
+
+</x-dc>
+</body>
+</html>

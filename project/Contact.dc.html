@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; background: oklch(0.16 0.006 255); font-family:'Inter',sans-serif; }
+    a { color: oklch(0.72 0.14 200); }
+    a:hover { color: oklch(0.8 0.14 200); }
+    input, textarea { font-family:'Inter',sans-serif; }
+  </style>
+</helmet>
+<div style="position:relative;min-height:100vh;color:oklch(0.96 0.004 255);overflow-x:hidden">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:oklch(0.16 0.006 255 / 0.85);backdrop-filter:blur(12px);border-bottom:1px solid oklch(0.28 0.006 255)">
+    <a href="./index.dc.html" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg, oklch(0.62 0.19 290), oklch(0.68 0.14 200))"></div>
+      <span style="font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;color:oklch(0.96 0.004 255)">Krish AI Labs</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:36px">
+      <a href="./index.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">Home</a>
+      <a href="./Services.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">Services</a>
+      <a href="./Portfolio.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">Portfolio</a>
+      <a href="./About.dc.html" style="color:oklch(0.72 0.01 255);text-decoration:none;font-size:14px;font-weight:500" style-hover="color:oklch(0.96 0.004 255)">About</a>
+      <a href="./Contact.dc.html" style="color:oklch(0.96 0.004 255);text-decoration:none;font-size:14px;font-weight:500">Contact</a>
+    </nav>
+    <a href="./Contact.dc.html" style="padding:10px 22px;border-radius:8px;background:linear-gradient(135deg, oklch(0.62 0.19 290), oklch(0.68 0.14 200));color:white;font-weight:600;text-decoration:none;font-size:14px">Get a Quote</a>
+  </header>
+
+  <section style="position:relative;padding:160px 48px 100px;max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:56px">
+    <div>
+      <span style="padding:6px 16px;border-radius:20px;border:1px solid oklch(0.4 0.02 255);color:oklch(0.75 0.02 255);font-size:13px;font-weight:500">Contact</span>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:42px;font-weight:700;margin:24px 0 16px;letter-spacing:-0.01em">Let's talk about your project</h1>
+      <p style="font-size:16px;line-height:1.65;color:oklch(0.72 0.01 255);margin:0 0 32px">Tell us what you're building. We typically respond within a day.</p>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div>
+          <span style="display:block;font-size:12px;font-weight:600;color:oklch(0.5 0.01 255);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Email</span>
+          <span style="font-size:15px">hello@krishailabs.com</span>
+        </div>
+        <div>
+          <span style="display:block;font-size:12px;font-weight:600;color:oklch(0.5 0.01 255);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Response time</span>
+          <span style="font-size:15px">Within 24 hours</span>
+        </div>
+      </div>
+    </div>
+    <form style="display:flex;flex-direction:column;gap:18px;padding:32px;border-radius:16px;background:oklch(0.2 0.006 255);border:1px solid oklch(0.28 0.006 255)">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <label style="font-size:13px;font-weight:500;color:oklch(0.75 0.01 255)">Name</label>
+        <input type="text" placeholder="Your name" style="padding:12px 14px;border-radius:8px;border:1px solid oklch(0.32 0.006 255);background:oklch(0.16 0.006 255);color:oklch(0.96 0.004 255);font-size:14px;outline:none" />
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <label style="font-size:13px;font-weight:500;color:oklch(0.75 0.01 255)">Email</label>
+        <input type="email" placeholder="you@company.com" style="padding:12px 14px;border-radius:8px;border:1px solid oklch(0.32 0.006 255);background:oklch(0.16 0.006 255);color:oklch(0.96 0.004 255);font-size:14px;outline:none" />
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <label style="font-size:13px;font-weight:500;color:oklch(0.75 0.01 255)">What are you building?</label>
+        <textarea rows="4" placeholder="Tell us about your project" style="padding:12px 14px;border-radius:8px;border:1px solid oklch(0.32 0.006 255);background:oklch(0.16 0.006 255);color:oklch(0.96 0.004 255);font-size:14px;outline:none;resize:vertical;font-family:inherit"></textarea>
+      </div>
+      <button type="submit" style="margin-top:8px;padding:14px;border-radius:8px;border:none;background:linear-gradient(135deg, oklch(0.62 0.19 290), oklch(0.68 0.14 200));color:white;font-weight:600;font-size:15px;cursor:pointer">Send Message</button>
+    </form>
+  </section>
+
+  <footer style="padding:48px;border-top:1px solid oklch(0.28 0.006 255);display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;max-width:1200px;margin:0 auto">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600">Krish AI Labs</span>
+      <span style="font-size:13px;color:oklch(0.6 0.01 255)">Building Intelligent Software for the Future</span>
+      <span style="font-size:13px;color:oklch(0.6 0.01 255);margin-top:8px">hello@krishailabs.com</span>
+    </div>
+    <div style="display:flex;gap:40px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-size:12px;font-weight:600;color:oklch(0.5 0.01 255);text-transform:uppercase;letter-spacing:0.05em">Company</span>
+        <a href="./About.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">About</a>
+        <a href="./Portfolio.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">Portfolio</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <span style="font-size:12px;font-weight:600;color:oklch(0.5 0.01 255);text-transform:uppercase;letter-spacing:0.05em">Work With Us</span>
+        <a href="./Services.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">Services</a>
+        <a href="./Contact.dc.html" style="text-decoration:none;font-size:14px;color:oklch(0.72 0.01 255)">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div style="text-align:center;padding:20px;font-size:12px;color:oklch(0.5 0.01 255);border-top:1px solid oklch(0.28 0.006 255)">&copy; 2026 Krish AI Labs. All rights reserved.</div>
+</div>
+
+</x-dc>
+</body>
+</html>
