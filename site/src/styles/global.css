@@ -1,0 +1,150 @@
+@import './tokens.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--color-pill-border);
+  color: var(--color-text-pill);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  background: var(--gradient-brand);
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-pill-border);
+  color: var(--color-text);
+  background: transparent;
+}
+
+.section-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.service-icon-violet {
+  background: var(--color-violet-wash);
+  color: var(--color-violet-text);
+}
+
+.service-icon-cyan {
+  background: var(--color-cyan-wash);
+  color: var(--color-cyan-text);
+}
+
+.placeholder-art {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-placeholder-a),
+    var(--color-placeholder-a) 10px,
+    var(--color-placeholder-b) 10px,
+    var(--color-placeholder-b) 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-faint);
+  font-family: monospace;
+}
+
+.cta-band {
+  padding: 80px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-brand-wash);
+}
+
+.cta-band > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-band h2 {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.cta-band p {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin: 0 0 32px;
+}

@@ -1,0 +1,47 @@
+:root {
+  /* surfaces */
+  --color-bg: oklch(0.16 0.006 255);
+  --color-header-bg: oklch(0.16 0.006 255 / 0.85);
+  --color-surface: oklch(0.2 0.006 255);
+  --color-border: oklch(0.28 0.006 255);
+  --color-border-strong: oklch(0.32 0.006 255);
+  --color-pill-border: oklch(0.4 0.02 255);
+
+  /* text */
+  --color-text: oklch(0.96 0.004 255);
+  --color-text-pill: oklch(0.75 0.02 255);
+  --color-text-bio: oklch(0.75 0.01 255);
+  --color-text-secondary: oklch(0.72 0.01 255);
+  --color-text-tertiary: oklch(0.68 0.01 255);
+  --color-text-muted: oklch(0.6 0.01 255);
+  --color-text-faint: oklch(0.55 0.01 255);
+  --color-text-label: oklch(0.5 0.01 255);
+  --color-step-number: oklch(0.4 0.02 255);
+
+  /* brand accents */
+  --color-violet: oklch(0.62 0.19 290);
+  --color-violet-text: oklch(0.72 0.16 290);
+  --color-violet-wash: oklch(0.62 0.19 290 / 0.18);
+  --color-violet-wash-strong: oklch(0.62 0.19 290 / 0.3);
+  --color-violet-glow: oklch(0.62 0.19 290 / 0.25);
+  --color-violet-tint: oklch(0.62 0.19 290 / 0.15);
+  --color-cyan: oklch(0.68 0.14 200);
+  --color-cyan-text: oklch(0.72 0.13 200);
+  --color-cyan-wash: oklch(0.68 0.14 200 / 0.18);
+  --color-cyan-wash-strong: oklch(0.68 0.14 200 / 0.3);
+  --color-cyan-glow: oklch(0.68 0.14 200 / 0.22);
+  --color-cyan-tint: oklch(0.68 0.14 200 / 0.15);
+  --color-link: oklch(0.72 0.14 200);
+  --color-link-hover: oklch(0.8 0.14 200);
+
+  /* placeholder art */
+  --color-placeholder-a: oklch(0.24 0.006 255);
+  --color-placeholder-b: oklch(0.22 0.006 255);
+
+  --gradient-brand: linear-gradient(135deg, var(--color-violet), var(--color-cyan));
+  --gradient-brand-wash: linear-gradient(135deg, var(--color-violet-tint), var(--color-cyan-tint));
+  --gradient-brand-wash-strong: linear-gradient(135deg, var(--color-violet-wash-strong), var(--color-cyan-wash-strong));
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}

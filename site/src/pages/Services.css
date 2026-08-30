@@ -1,0 +1,49 @@
+.services-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 48px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 32px;
+  padding: 32px;
+  border-radius: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.service-row-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.service-row h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.service-row-description {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text-tertiary);
+  margin: 0 0 12px;
+}
+
+.service-row-stack {
+  font-size: 13px;
+  color: var(--color-text-faint);
+  margin: 0;
+}

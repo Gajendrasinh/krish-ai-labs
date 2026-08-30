@@ -1,0 +1,68 @@
+.founder-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 48px 100px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 48px;
+}
+
+.founder-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
+  background: var(--gradient-brand-wash-strong);
+  border: 1px solid var(--color-border);
+  font-size: 12px;
+  text-align: center;
+  padding: 12px;
+}
+
+.founder-name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.founder-role {
+  font-size: 14px;
+  color: var(--color-cyan-text);
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.founder-bio {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-bio);
+  margin: 0 0 16px;
+}
+
+.founder-bio:last-child {
+  margin-bottom: 0;
+}
+
+.about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 48px 100px;
+}
+
+.about-section-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 28px;
+}
+
+.about-copy {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0 0 16px;
+}
+
+.about-copy-last {
+  margin-bottom: 0;
+}
