@@ -1,7 +1,7 @@
 # Krish AI Labs — Chat backend
 
-A small FastAPI service backing the AI chat widget on the [website](../site) and the
-[mobile app](../mobile). It's a genuine (if intentionally small) RAG agent:
+A small FastAPI service backing the AI chat widget on the [website](../site). It's a genuine
+(if intentionally small) RAG agent:
 
 - **Retrieval** (`app/retriever.py`) — a dependency-free TF-IDF index over the site's own content
   (`data/kb/*.md`, one chunk per `##` section). No embeddings API, no vector database — good
@@ -65,15 +65,13 @@ docker run -p 8000:8000 -e ANTHROPIC_API_KEY=sk-ant-... krish-ai-labs-backend
 ```
 
 Any host that runs a container or a Python ASGI app works (Fly.io, Render, Railway, Cloud Run,
-ECS, etc). Set `ALLOWED_ORIGINS` to the real website + mobile app origins before going to
-production — it defaults to `*` (open) for local dev.
+ECS, etc). Set `ALLOWED_ORIGINS` to the real website origin before going to production — it
+defaults to `*` (open) for local dev.
 
-## Wiring up the frontends
+## Wiring up the website
 
-- **Website**: point `CHAT_ENDPOINT` in `site/src/components/ChatWidget.jsx` at this service's
-  `/api/chat` URL (and delete `site/dev/chatStubPlugin.js` once this is live — it was only a
-  placeholder).
-- **Mobile app**: set `EXPO_PUBLIC_API_URL` (see `mobile/README.md`) to this service's base URL.
+Point `CHAT_ENDPOINT` in `site/src/components/ChatWidget.jsx` at this service's `/api/chat` URL
+(and delete `site/dev/chatStubPlugin.js` once this is live — it was only a placeholder).
 
 ## Extending the knowledge base
 

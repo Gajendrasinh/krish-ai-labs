@@ -28,7 +28,7 @@ The design medium is **HTML/CSS/JS** — these are prototypes, not production co
 
 ## Implementation
 
-The design above has been implemented as three apps in this repo:
+The design above has been implemented as two apps in this repo:
 
 - **`site/`** — the marketing website (Home, Services, Portfolio, About, Contact), React + Vite +
   React Router, pixel-matched to `project/*.dc.html`. Includes a floating AI chat widget
@@ -36,10 +36,8 @@ The design above has been implemented as three apps in this repo:
 - **`backend/`** — the chat widget's backend: a small FastAPI RAG agent (Python, Anthropic Claude
   API with tool use) that answers questions grounded in the site's own content. Runs in a
   retrieval-only fallback mode until `ANTHROPIC_API_KEY` is set — see `backend/README.md`.
-- **`mobile/`** — an Expo (React Native) app with a chat screen talking to the same backend — see
-  `mobile/README.md`.
 
-`site`'s chat widget and `mobile`'s chat screen both speak the same contract to `backend`:
+`site`'s chat widget speaks this contract to `backend`:
 
 ```
 POST /api/chat
